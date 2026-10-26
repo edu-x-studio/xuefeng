@@ -69,8 +69,8 @@ def _cors_origins() -> list[str]:
     if raw:
         return [o.strip() for o in raw.split(",") if o.strip()]
     return [
-        "http://localhost:5173", "http://127.0.0.1:5173",   # uni-app H5 dev
-        "http://localhost:8000", "http://127.0.0.1:8000",   # 本机后端 / 管理端
+        "http://localhost:5173", "http://127.0.0.1:5173","http://172.0.100.168:5173", "http://172.0.100.88:5173",   # uni-app H5 dev
+        "http://localhost:8000", "http://127.0.0.1:8000","http://172.0.100.168:8000", "http://172.0.100.88:8000",   # 本机后端 / 管理端
         "http://localhost:8080", "http://127.0.0.1:8080",
     ]
 
